@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,7 +15,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += (Vector3)playerMovement * speed * Time.deltaTime;
+
+        Vector3 newPos = transform.position; 
+        newPos += (Vector3)playerMovement * speed * Time.deltaTime;
+        newPos.x = Mathf.Clamp(newPos.x, -9, 9);
+        newPos.y = Mathf.Clamp(newPos.y, -5, 5);
+        transform.position = newPos;
     }
 
     public void OnMove(InputAction.CallbackContext context)
