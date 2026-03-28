@@ -4,7 +4,7 @@ using UnityEngine.Events;
 
 public class UpdatedHazardCollision : MonoBehaviour
 {
-    public Transform player;
+    public GameObject player;
     public SpriteRenderer hazard;
     public bool Collision;
     public float time;
@@ -20,7 +20,7 @@ public class UpdatedHazardCollision : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (hazard.bounds.Contains(player.transform.position))
+        if (hazard.bounds.Contains(player.transform.position) == true)
         {
            
             if (Collision == true)
@@ -30,7 +30,8 @@ public class UpdatedHazardCollision : MonoBehaviour
             else
             {
                 Collision = true;
-                
+               
+                Debug.Log("We in");
             }
         }
         else
@@ -38,6 +39,7 @@ public class UpdatedHazardCollision : MonoBehaviour
             if (Collision == true)
             {
                 Collision = false;
+                Debug.Log("We out");
             }
 
             else
