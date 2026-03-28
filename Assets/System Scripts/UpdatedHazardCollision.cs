@@ -4,11 +4,12 @@ using UnityEngine.Events;
 
 public class UpdatedHazardCollision : MonoBehaviour
 {
-    public GameObject player;
+    public Transform player;
     public SpriteRenderer hazard;
     public bool Collision;
     public float time;
     public bool destroy;
+    public UnityEvent onCollision;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,9 +22,10 @@ public class UpdatedHazardCollision : MonoBehaviour
         time += Time.deltaTime;
         if (hazard.bounds.Contains(player.transform.position))
         {
+           
             if (Collision == true)
             {
-                Debug.Log("Eek");
+                onCollision.Invoke();
             }
             else
             {
@@ -43,10 +45,7 @@ public class UpdatedHazardCollision : MonoBehaviour
 
             }
         }
-        if (time > 10)
-        {
-            destroy = true;
-        }
+     
     }
 }
 

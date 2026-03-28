@@ -104,21 +104,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b091da5b64135e40b397ac5e45a7641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpdatedHazardCollision
-  player: {fileID: 598219959514832300, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
+  player: {fileID: 6114002967046947975, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
   hazard: {fileID: 5229244966246264196}
   Collision: 0
-  OnCollision:
+  time: 0
+  destroy: 0
+  onCollision:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5467406693353552823, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: collide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
