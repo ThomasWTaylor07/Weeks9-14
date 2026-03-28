@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 6;
     public Vector2 playerMovement;
     public AudioSource source;
+  
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,8 +32,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void collide()
     {
-        source.Play();
+       
         Debug.Log("AHHHHHHHHHHHHHHHHHHHHH");
+        source.Play();
     }
     
 }
