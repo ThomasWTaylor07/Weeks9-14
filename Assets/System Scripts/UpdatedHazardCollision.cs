@@ -22,15 +22,17 @@ public class UpdatedHazardCollision : MonoBehaviour
         time += Time.deltaTime;
         if (hazard.bounds.Contains(player.transform.position) == true)
         {
+
+            
            
             if (Collision == true)
             {
-                onCollision.Invoke();
+                
             }
             else
             {
                 Collision = true;
-               
+                onCollision.Invoke();
                 Debug.Log("We in");
             }
         }

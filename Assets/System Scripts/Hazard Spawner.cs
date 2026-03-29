@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class HazardSpawner : MonoBehaviour
     public UpdatedHazardCollision UHC1;
     public List<GameObject> h1;
     public float t;
+
   
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,7 +22,7 @@ public class HazardSpawner : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {                                                                                                      
         t += Time.deltaTime;
         if (t >= 2)
         {
@@ -39,5 +41,10 @@ public class HazardSpawner : MonoBehaviour
 
 
         }
+    }
+
+    private GameObject Instantiate(GameObject hazard1, object identity)
+    {
+        throw new NotImplementedException();
     }
 }
