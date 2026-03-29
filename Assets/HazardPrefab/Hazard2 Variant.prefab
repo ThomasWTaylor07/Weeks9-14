@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 5663531169415112114, guid: 42a7c0c5ca6a008468b1cec43fe317b0, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 598219959514832300, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
+      objectReference: {fileID: 8990584432327854497, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
     - target: {fileID: 7168518836330844981, guid: 42a7c0c5ca6a008468b1cec43fe317b0, type: 3}
       propertyPath: m_Name
       value: Hazard2 Variant

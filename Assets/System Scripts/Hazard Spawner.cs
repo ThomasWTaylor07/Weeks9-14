@@ -27,7 +27,7 @@ public class HazardSpawner : MonoBehaviour
         if (t >= 2)
         {
             spawnedHazard1 = Instantiate(hazard1);
-             UHC1 = spawnedHazard1.GetComponent<UpdatedHazardCollision>();
+             
             h1.Add(spawnedHazard1);
            
 
@@ -35,7 +35,7 @@ public class HazardSpawner : MonoBehaviour
         }
         for (int i = 0; i < h1.Count; i++)
         {
-            UHC1 = h1[i].GetComponent<UpdatedHazardCollision>();
+            
 
 
 

@@ -4,9 +4,9 @@ using UnityEngine.Events;
 
 public class UpdatedHazardCollision : MonoBehaviour
 {
-    public GameObject player;
-    public SpriteRenderer hazard;
-    public bool Collision;
+    public SpriteRenderer player;
+    
+    public bool Collision = false;
     public float time;
     public bool destroy;
     public UnityEvent onCollision;
@@ -19,8 +19,8 @@ public class UpdatedHazardCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
-        if (hazard.bounds.Contains(player.transform.position) == true)
+       
+        if (player.bounds.Contains(transform.position) == true)
         {
 
             
