@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: 4056058344551517612, guid: 90cea4e6d3360e54fa7d20e47c1cfb0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,7 +106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpdatedHazardCollision
   player: {fileID: 6114002967046947975, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
-  hazard: {fileID: 3761355636069348291}
   Collision: 0
   time: 0
   destroy: 0
