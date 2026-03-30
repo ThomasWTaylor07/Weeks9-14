@@ -22,29 +22,34 @@ public class HazardSpawner : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {                                                                                                      
+    {
         t += Time.deltaTime;
         if (t >= 2)
         {
             spawnedHazard1 = Instantiate(hazard1);
-             
+            UpdatedHazardCollision UHC1 = spawnedHazard1.GetComponent<UpdatedHazardCollision>();
             h1.Add(spawnedHazard1);
-           
+
 
             t = 0;
         }
         for (int i = 0; i < h1.Count; i++)
         {
-            
+            UpdatedHazardCollision UHCi = h1[i].GetComponent<UpdatedHazardCollision>();
+
+            if (UHCi.destroy == true)
+            {
+
+                GameObject hazard = h1[i];
+
+                h1.Remove(hazard);
+
+                Destroy(hazard);
 
 
 
 
+            }
         }
-    }
-
-    private GameObject Instantiate(GameObject hazard1, object identity)
-    {
-        throw new NotImplementedException();
     }
 }

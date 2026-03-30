@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class UpdatedHazardCollision : MonoBehaviour
 {
     public SpriteRenderer player;
-    
+
     public bool Collision = false;
     public float time;
     public bool destroy;
@@ -14,20 +14,21 @@ public class UpdatedHazardCollision : MonoBehaviour
     void Start()
     {
         destroy = false;
+        time = 25;
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        time -= 0.01f;
         if (player.bounds.Contains(transform.position) == true)
         {
 
-            
-           
+
+
             if (Collision == true)
             {
-                
+
             }
             else
             {
@@ -49,7 +50,12 @@ public class UpdatedHazardCollision : MonoBehaviour
 
             }
         }
-     
+        if (time < 0)
+        {
+            destroy = true;
+
+
+        }
     }
 }
 
