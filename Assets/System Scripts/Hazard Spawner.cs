@@ -76,7 +76,7 @@ public class HazardSpawner : MonoBehaviour
 
             t3 = 0;
         }
-        if (t4 >= 15)
+        if (t4 >= 6)
         {
             spawnedHazard4 = Instantiate(hazard4);
             UpdatedHazardCollision UCH4 = spawnedHazard4.GetComponent<UpdatedHazardCollision>();

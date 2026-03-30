@@ -423,7 +423,7 @@ MonoBehaviour:
   UHC4: {fileID: 3766561348927366474, guid: 11043ed63d6b6ff4e98ab573f965fb30, type: 3}
   h4: []
   t4: 0
-  player4: {fileID: 8990584432327854497, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
+  player4: {fileID: 1808516359}
 --- !u!4 &1060911106
 Transform:
   m_ObjectHideFlags: 0
