@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8045694222542078911}
   - component: {fileID: 5229244966246264196}
   - component: {fileID: 3664269195205324931}
+  - component: {fileID: 5694830958161559936}
+  - component: {fileID: -2415996343175299670}
   m_Layer: 0
   m_Name: Hazard9
   m_TagString: Untagged
@@ -104,10 +106,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b091da5b64135e40b397ac5e45a7641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpdatedHazardCollision
-  player: {fileID: 6114002967046947975, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
+  player: {fileID: 8990584432327854497, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
   Collision: 0
   time: 0
   destroy: 0
   onCollision:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5694830958161559936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942965470956619702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e840549544ce9a4789bbaca62d031ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HazardMovement6
+  yPos: 0
+  speed: 0
+--- !u!95 &-2415996343175299670
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6942965470956619702}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07cda210d9a6a67408e7c3f6a3f09be2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

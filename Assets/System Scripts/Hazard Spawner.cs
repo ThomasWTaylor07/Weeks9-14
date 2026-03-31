@@ -35,6 +35,34 @@ public class HazardSpawner : MonoBehaviour
     public float t4;
     public SpriteRenderer player4;
 
+    public GameObject hazard5;
+    public GameObject spawnedHazard5;
+    public UpdatedHazardCollision UHC5;
+    public List<GameObject> h5;
+    public float t5;
+    public SpriteRenderer player5;
+
+    public GameObject hazard6;
+    public GameObject spawnedHazard6;
+    public UpdatedHazardCollision UHC6;
+    public List<GameObject> h6;
+    public float t6;
+    public SpriteRenderer player6;
+
+    public GameObject hazard7;
+    public GameObject spawnedHazard7;
+    public UpdatedHazardCollision UHC7;
+    public List<GameObject> h7;
+    public float t7;
+    public SpriteRenderer player7;
+
+    public GameObject hazard8;
+    public GameObject spawnedHazard8;
+    public UpdatedHazardCollision UHC8;
+    public List<GameObject> h8;
+    public float t8;
+    public SpriteRenderer player8;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -50,6 +78,10 @@ public class HazardSpawner : MonoBehaviour
         t2 += Time.deltaTime;
         t3 += Time.deltaTime;
         t4 += Time.deltaTime;
+        t5 += Time.deltaTime;
+        t6 += Time.deltaTime;
+        t7 += Time.deltaTime;
+        t8 += Time.deltaTime;
         if (t1 >= 10)
         {
             spawnedHazard1 = Instantiate(hazard1);
@@ -83,6 +115,41 @@ public class HazardSpawner : MonoBehaviour
             h4.Add(spawnedHazard4);
 
             t4 = 0;
+        }
+
+        if (t5 >= 7)
+        {
+            spawnedHazard5 = Instantiate(hazard5);
+            UpdatedHazardCollision UCH5 = spawnedHazard5.GetComponent<UpdatedHazardCollision>();
+            h5.Add(spawnedHazard5);
+
+            t5 = 0;
+        }
+        if (t6 >= 3)
+        {
+            spawnedHazard6 = Instantiate(hazard6);
+            UpdatedHazardCollision UCH6 = spawnedHazard6.GetComponent<UpdatedHazardCollision>();
+            h6.Add(spawnedHazard6);
+
+            t6 = 0;
+        }
+
+        if (t7 >= 14)
+        {
+            spawnedHazard7 = Instantiate(hazard7);
+            UpdatedHazardCollision UCH7 = spawnedHazard7.GetComponent<UpdatedHazardCollision>();
+            h7.Add(spawnedHazard7);
+
+            t7 = 0;
+        }
+
+        if (t8 >= 1)
+        {
+            spawnedHazard8 = Instantiate(hazard8);
+            UpdatedHazardCollision UCH8 = spawnedHazard8.GetComponent<UpdatedHazardCollision>();
+            h8.Add(spawnedHazard8);
+
+            t8 = 0;
         }
         for (int i = 0; i < h1.Count; i++)
         {
@@ -125,17 +192,60 @@ public class HazardSpawner : MonoBehaviour
                 Destroy(hazard3);
             }
         }
-        for (int iiii = 0; iiii < h4.Count; iiii++)
+        for (int iv = 0; iv < h4.Count; iv++)
         {
-            UpdatedHazardCollision UCHiiii = h4[iiii].GetComponent<UpdatedHazardCollision>();
-            UCHiiii.player = player4;
-            if (UCHiiii.destroy == true)
+            UpdatedHazardCollision UCHiv = h4[iv].GetComponent<UpdatedHazardCollision>();
+            UCHiv.player = player4;
+            if (UCHiv.destroy == true)
             {
-
-                GameObject hazard4 = h4[iiii];
+                GameObject hazard4 = h4[iv];
                 h4.Remove(hazard4);
                 Destroy(hazard4);
             }
         }
+        for (int v = 0; v < h5.Count; v++)
+        {
+            UpdatedHazardCollision UCHv = h5[v].GetComponent<UpdatedHazardCollision>();
+            UCHv.player = player5;
+            if (UCHv.destroy == true)
+            {
+                GameObject hazard5 = h5[v];
+                h5.Remove(hazard5);
+                Destroy(hazard5);
+            }
+        }
+        for (int vi = 0; vi < h6.Count; vi++)
+        {
+            UpdatedHazardCollision UCHvi = h6[vi].GetComponent<UpdatedHazardCollision>();
+            UCHvi.player = player6;
+            if (UCHvi.destroy == true)
+            {
+                GameObject hazard6 = h6[vi];
+                h6.Remove(hazard6);
+                Destroy(hazard6);
+            }
+        }
+        for (int vii = 0; vii < h7.Count; vii++)
+        {
+            UpdatedHazardCollision UCHvii = h7[vii].GetComponent<UpdatedHazardCollision>();
+            UCHvii.player = player7;
+            if (UCHvii.destroy == true)
+            {
+                GameObject hazard7 = h7[vii];
+                h7.Remove(hazard7);
+                Destroy(hazard7);
+            }
+        }
+        for (int viii = 0; viii < h8.Count; viii++)
+        {
+            UpdatedHazardCollision UCHviii = h8[viii].GetComponent<UpdatedHazardCollision>();
+            UCHviii.player = player8;
+            if (UCHviii.destroy == true)
+            {
+                GameObject hazard8 = h8[viii];
+                h8.Remove(hazard8);
+                Destroy(hazard8);
+            }
+        }
     }
-}
+    }
