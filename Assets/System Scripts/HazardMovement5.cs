@@ -8,7 +8,7 @@ public class HazardMovement5 : MonoBehaviour
     public float xPos;
     void Start()
     {
-        speed = Random.Range(0.1f, 1f);
+        speed = Random.Range(0.01f, 0.1f);
         xPos = Random.Range(-8, 8);
     }
 
@@ -17,6 +17,7 @@ public class HazardMovement5 : MonoBehaviour
     {
         Vector2 newPos = transform.position;
         newPos.x = xPos;
-        newPos.y += speed;
+        newPos.y -= speed;
+        transform.position = newPos;
     }
 }

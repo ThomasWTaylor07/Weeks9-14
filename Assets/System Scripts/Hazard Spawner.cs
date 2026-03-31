@@ -7,12 +7,14 @@ using UnityEngine.Events;
 
 public class HazardSpawner : MonoBehaviour
 {
+    public AudioSource source;
     public GameObject hazard1;
     public GameObject spawnedHazard1;
     public UpdatedHazardCollision UHC1;
     public List<GameObject> h1;
     public float t1;
     public SpriteRenderer player1;
+    public AudioClip a1;
 
     public GameObject hazard2;
     public GameObject spawnedHazard2;
@@ -20,6 +22,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h2;
     public float t2;
     public SpriteRenderer player2;
+    public AudioClip a2;
 
     public GameObject hazard3;
     public GameObject spawnedHazard3;
@@ -27,6 +30,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h3;
     public float t3;
     public SpriteRenderer player3;
+    public AudioClip a3;
 
     public GameObject hazard4;
     public GameObject spawnedHazard4;
@@ -34,6 +38,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h4;
     public float t4;
     public SpriteRenderer player4;
+    public AudioClip a4;
 
     public GameObject hazard5;
     public GameObject spawnedHazard5;
@@ -41,6 +46,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h5;
     public float t5;
     public SpriteRenderer player5;
+    public AudioClip a5;
 
     public GameObject hazard6;
     public GameObject spawnedHazard6;
@@ -48,6 +54,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h6;
     public float t6;
     public SpriteRenderer player6;
+    public AudioClip a6;
 
     public GameObject hazard7;
     public GameObject spawnedHazard7;
@@ -55,6 +62,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h7;
     public float t7;
     public SpriteRenderer player7;
+    public AudioClip a7;
 
     public GameObject hazard8;
     public GameObject spawnedHazard8;
@@ -62,6 +70,14 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h8;
     public float t8;
     public SpriteRenderer player8;
+    public AudioClip a8;
+
+    public GameObject hazard9;
+    public GameObject spawnedHazard9;
+    public UpdatedHazardCollision UHC9;
+    public List<GameObject> h9;
+    public float t9;
+    public SpriteRenderer player9;
 
 
 
@@ -82,8 +98,12 @@ public class HazardSpawner : MonoBehaviour
         t6 += Time.deltaTime;
         t7 += Time.deltaTime;
         t8 += Time.deltaTime;
+        t9 += Time.deltaTime;
         if (t1 >= 10)
         {
+            source.clip = a1;
+            source.Play();
+
             spawnedHazard1 = Instantiate(hazard1);
             UpdatedHazardCollision UHC1 = spawnedHazard1.GetComponent<UpdatedHazardCollision>();
 
@@ -94,6 +114,8 @@ public class HazardSpawner : MonoBehaviour
         }
         if (t2 >= 4)
         {
+            source.clip = a2;
+            source.Play();
             spawnedHazard2 = Instantiate(hazard2);
             UpdatedHazardCollision UCH2 = spawnedHazard2.GetComponent<UpdatedHazardCollision>();
             h2.Add(spawnedHazard2);
@@ -102,6 +124,8 @@ public class HazardSpawner : MonoBehaviour
         }
         if (t3 >= 15)
         {
+            source.clip = a3;
+            source.Play();
             spawnedHazard3 = Instantiate(hazard3);
             UpdatedHazardCollision UCH3 = spawnedHazard3.GetComponent<UpdatedHazardCollision>();
             h3.Add(spawnedHazard3);
@@ -110,6 +134,8 @@ public class HazardSpawner : MonoBehaviour
         }
         if (t4 >= 6)
         {
+            source.clip = a4;
+            source.Play();
             spawnedHazard4 = Instantiate(hazard4);
             UpdatedHazardCollision UCH4 = spawnedHazard4.GetComponent<UpdatedHazardCollision>();
             h4.Add(spawnedHazard4);
@@ -119,6 +145,8 @@ public class HazardSpawner : MonoBehaviour
 
         if (t5 >= 7)
         {
+            source.clip = a5;
+            source.Play();
             spawnedHazard5 = Instantiate(hazard5);
             UpdatedHazardCollision UCH5 = spawnedHazard5.GetComponent<UpdatedHazardCollision>();
             h5.Add(spawnedHazard5);
@@ -127,6 +155,8 @@ public class HazardSpawner : MonoBehaviour
         }
         if (t6 >= 3)
         {
+            source.clip = a6;
+            source.Play();
             spawnedHazard6 = Instantiate(hazard6);
             UpdatedHazardCollision UCH6 = spawnedHazard6.GetComponent<UpdatedHazardCollision>();
             h6.Add(spawnedHazard6);
@@ -136,6 +166,8 @@ public class HazardSpawner : MonoBehaviour
 
         if (t7 >= 14)
         {
+            source.clip = a7;
+            source.Play();
             spawnedHazard7 = Instantiate(hazard7);
             UpdatedHazardCollision UCH7 = spawnedHazard7.GetComponent<UpdatedHazardCollision>();
             h7.Add(spawnedHazard7);
@@ -143,13 +175,23 @@ public class HazardSpawner : MonoBehaviour
             t7 = 0;
         }
 
-        if (t8 >= 1)
+        if (t8 >= 20)
         {
+            source.clip = a8;
+            source.Play();
             spawnedHazard8 = Instantiate(hazard8);
             UpdatedHazardCollision UCH8 = spawnedHazard8.GetComponent<UpdatedHazardCollision>();
             h8.Add(spawnedHazard8);
 
             t8 = 0;
+        }
+        if (t9 >= 30)
+        {
+            spawnedHazard9 = Instantiate(hazard9);
+            UpdatedHazardCollision UCH9 = spawnedHazard9.GetComponent<UpdatedHazardCollision>();
+            h9.Add(spawnedHazard9);
+
+            t9 = 0;
         }
         for (int i = 0; i < h1.Count; i++)
         {
@@ -245,6 +287,17 @@ public class HazardSpawner : MonoBehaviour
                 GameObject hazard8 = h8[viii];
                 h8.Remove(hazard8);
                 Destroy(hazard8);
+            }
+        }
+        for (int ix = 0; ix < h9.Count; ix++)
+        {
+            UpdatedHazardCollision UCHix = h9[ix].GetComponent<UpdatedHazardCollision>();
+            UCHix.player = player9;
+            if (UCHix.destroy == true)
+            {
+                GameObject hazard9 = h9[ix];
+                h9.Remove(hazard9);
+                Destroy(hazard9);
             }
         }
     }
