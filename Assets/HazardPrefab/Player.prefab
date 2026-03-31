@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3036131294711416876}
   - component: {fileID: 5467406693353552823}
   - component: {fileID: 4141158815256366315}
-  - component: {fileID: 2879158347908724681}
+  - component: {fileID: -6932163891415620006}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -227,7 +227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 4
   playerMovement: {x: 0, y: 0}
-  source: {fileID: 2879158347908724681}
+  source: {fileID: -6932163891415620006}
+  clip: {fileID: 8300000, guid: 1109f5658aefb4847a6472300f8d03c2, type: 3}
 --- !u!95 &4141158815256366315
 Animator:
   serializedVersion: 7
@@ -250,7 +251,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!82 &2879158347908724681
+--- !u!82 &-6932163891415620006
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,8 +262,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 215d6d45b7901a940afb8d64c9ab109a, type: 3}
-  m_PlayOnAwake: 0
+  m_Resource: {fileID: 8300000, guid: 1109f5658aefb4847a6472300f8d03c2, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
