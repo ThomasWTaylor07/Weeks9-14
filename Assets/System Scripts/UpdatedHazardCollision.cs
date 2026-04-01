@@ -14,7 +14,7 @@ public class UpdatedHazardCollision : MonoBehaviour
     void Start()
     {
         destroy = false;
-        time = 25;
+        time = 20;
     }
 
     // Update is called once per frame

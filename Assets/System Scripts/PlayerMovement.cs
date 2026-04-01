@@ -35,8 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
        
         Debug.Log("AHHHHHHHHHHHHHHHHHHHHH");
-        source.clip = clip;
-        source.Play();
+       
     }
     
 }

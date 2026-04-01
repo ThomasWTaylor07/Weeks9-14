@@ -9,7 +9,7 @@ public class HazardMovement6 : MonoBehaviour
     void Start()
     {
         yPos = Random.Range(-5, 5);
-        speed = Random.Range(0.01f, 0.1f);
+        speed = Random.Range(0.01f, 0.06f);
 
     }
 

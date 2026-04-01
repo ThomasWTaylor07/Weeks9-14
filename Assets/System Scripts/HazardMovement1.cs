@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HazardMovement1 : MonoBehaviour
 {
-    public float speed = 0.000001f;
+    public float speed = 0.0001f;
     public float xPos;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

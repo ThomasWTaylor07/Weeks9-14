@@ -112,21 +112,9 @@ MonoBehaviour:
   onCollision:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5467406693353552823, guid: 55acb52c47a875149b08b0ad7c732b65, type: 3}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: collide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 226522065812467869, guid: cc283b9afb5588c4b849addac5441413, type: 3}
-        m_TargetAssemblyTypeName: debug, Assembly-CSharp
-        m_MethodName: test
+      - m_Target: {fileID: 3337792102019240799, guid: c37cde6e588b230459635d0cab99d4bc, type: 3}
+        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+        m_MethodName: playSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
