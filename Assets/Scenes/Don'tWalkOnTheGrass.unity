@@ -452,7 +452,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1421040934}
         m_TargetAssemblyTypeName: MouseMovement, Assembly-CSharp
-        m_MethodName: onClick
+        m_MethodName: LERP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MouseMovement
   movement: {x: 0, y: 0}
   speed: 5
-  t: 0
+  time: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
