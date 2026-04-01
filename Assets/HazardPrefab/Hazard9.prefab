@@ -114,8 +114,8 @@ MonoBehaviour:
   onCollision:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3337792102019240799, guid: c37cde6e588b230459635d0cab99d4bc, type: 3}
-        m_TargetAssemblyTypeName: AudioPlayer, Assembly-CSharp
+      - m_Target: {fileID: 3664269195205324931}
+        m_TargetAssemblyTypeName: UpdatedHazardCollision, Assembly-CSharp
         m_MethodName: playSound
         m_Mode: 1
         m_Arguments:
@@ -126,6 +126,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  asource: {fileID: -8419281530066109953}
 --- !u!95 &-2415996343175299670
 Animator:
   serializedVersion: 7
@@ -173,7 +174,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 5be6c895c9aa1514c9700e61fbb3b12a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2d8d80fc7264afb47b192742f6de5fb8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

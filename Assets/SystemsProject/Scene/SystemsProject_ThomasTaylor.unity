@@ -704,6 +704,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2966272375733311337, guid: c37cde6e588b230459635d0cab99d4bc, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7477296426501948819, guid: c37cde6e588b230459635d0cab99d4bc, type: 3}
       propertyPath: m_Name
       value: Player Audio Source

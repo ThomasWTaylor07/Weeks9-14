@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
@@ -5,11 +6,11 @@ using UnityEngine.Events;
 public class UpdatedHazardCollision : MonoBehaviour
 {
     public SpriteRenderer player;
-
     public bool Collision = false;
     public float time;
     public bool destroy;
     public UnityEvent onCollision;
+    public AudioSource asource;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,6 +57,10 @@ public class UpdatedHazardCollision : MonoBehaviour
 
 
         }
+    }
+    public void playSound()
+    {
+        asource.Play();
     }
 }
 

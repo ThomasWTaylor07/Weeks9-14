@@ -15,6 +15,7 @@ public class HazardSpawner : MonoBehaviour
     public float t1;
     public SpriteRenderer player1;
     public AudioClip a1;
+    
 
     public GameObject hazard2;
     public GameObject spawnedHazard2;
@@ -23,6 +24,8 @@ public class HazardSpawner : MonoBehaviour
     public float t2;
     public SpriteRenderer player2;
     public AudioClip a2;
+    
+
 
     public GameObject hazard3;
     public GameObject spawnedHazard3;
@@ -32,6 +35,7 @@ public class HazardSpawner : MonoBehaviour
     public SpriteRenderer player3;
     public AudioClip a3;
 
+
     public GameObject hazard4;
     public GameObject spawnedHazard4;
     public UpdatedHazardCollision UHC4;
@@ -39,6 +43,7 @@ public class HazardSpawner : MonoBehaviour
     public float t4;
     public SpriteRenderer player4;
     public AudioClip a4;
+  
 
     public GameObject hazard5;
     public GameObject spawnedHazard5;
@@ -47,6 +52,7 @@ public class HazardSpawner : MonoBehaviour
     public float t5;
     public SpriteRenderer player5;
     public AudioClip a5;
+    
 
     public GameObject hazard6;
     public GameObject spawnedHazard6;
@@ -55,6 +61,7 @@ public class HazardSpawner : MonoBehaviour
     public float t6;
     public SpriteRenderer player6;
     public AudioClip a6;
+   
 
     public GameObject hazard7;
     public GameObject spawnedHazard7;
@@ -63,6 +70,7 @@ public class HazardSpawner : MonoBehaviour
     public float t7;
     public SpriteRenderer player7;
     public AudioClip a7;
+  
 
     public GameObject hazard8;
     public GameObject spawnedHazard8;
@@ -72,12 +80,14 @@ public class HazardSpawner : MonoBehaviour
     public SpriteRenderer player8;
     public AudioClip a8;
 
+
     public GameObject hazard9;
     public GameObject spawnedHazard9;
     public UpdatedHazardCollision UHC9;
     public List<GameObject> h9;
     public float t9;
     public SpriteRenderer player9;
+   
 
 
 
