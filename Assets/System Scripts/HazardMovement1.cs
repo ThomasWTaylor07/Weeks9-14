@@ -22,7 +22,6 @@ public class HazardMovement1 : MonoBehaviour
         speed = 2 * Time.deltaTime;
         Vector2 newPos = transform.position;
         newPos.y -= speed;
-        Debug.Log(Time.deltaTime * speed);
         newPos.x = xPos;
         transform.position = newPos;
     }
