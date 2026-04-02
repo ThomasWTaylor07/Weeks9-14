@@ -10,12 +10,12 @@ public class UpdatedHazardCollision : MonoBehaviour
     public float time;
     public bool destroy;
     public UnityEvent onCollision;
-    public AudioSource asource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         destroy = false;
-        time = 20;
+        time = 25;
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class UpdatedHazardCollision : MonoBehaviour
             {
                 Collision = true;
                 onCollision.Invoke();
-                Debug.Log("We in");
+                
             }
         }
         else
@@ -43,7 +43,7 @@ public class UpdatedHazardCollision : MonoBehaviour
             if (Collision == true)
             {
                 Collision = false;
-                Debug.Log("We out");
+                
             }
 
             else
@@ -58,9 +58,6 @@ public class UpdatedHazardCollision : MonoBehaviour
 
         }
     }
-    public void playSound()
-    {
-        asource.Play();
-    }
+
 }
 

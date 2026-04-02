@@ -7,14 +7,13 @@ using UnityEngine.Events;
 
 public class HazardSpawner : MonoBehaviour
 {
-    public AudioSource source;
     public GameObject hazard1;
     public GameObject spawnedHazard1;
     public UpdatedHazardCollision UHC1;
     public List<GameObject> h1;
     public float t1;
     public SpriteRenderer player1;
-    public AudioClip a1;
+    
     
 
     public GameObject hazard2;
@@ -23,7 +22,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h2;
     public float t2;
     public SpriteRenderer player2;
-    public AudioClip a2;
+    
     
 
 
@@ -33,7 +32,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h3;
     public float t3;
     public SpriteRenderer player3;
-    public AudioClip a3;
+
 
 
     public GameObject hazard4;
@@ -42,7 +41,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h4;
     public float t4;
     public SpriteRenderer player4;
-    public AudioClip a4;
+
   
 
     public GameObject hazard5;
@@ -51,7 +50,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h5;
     public float t5;
     public SpriteRenderer player5;
-    public AudioClip a5;
+
     
 
     public GameObject hazard6;
@@ -60,7 +59,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h6;
     public float t6;
     public SpriteRenderer player6;
-    public AudioClip a6;
+ 
    
 
     public GameObject hazard7;
@@ -69,7 +68,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h7;
     public float t7;
     public SpriteRenderer player7;
-    public AudioClip a7;
+
   
 
     public GameObject hazard8;
@@ -78,7 +77,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h8;
     public float t8;
     public SpriteRenderer player8;
-    public AudioClip a8;
+
 
 
     public GameObject hazard9;
@@ -109,11 +108,8 @@ public class HazardSpawner : MonoBehaviour
         t7 += Time.deltaTime;
         t8 += Time.deltaTime;
         t9 += Time.deltaTime;
-        if (t1 >= 10)
+        if (t1 >= 5)
         {
-            source.clip = a1;
-            source.Play();
-
             spawnedHazard1 = Instantiate(hazard1);
             UpdatedHazardCollision UHC1 = spawnedHazard1.GetComponent<UpdatedHazardCollision>();
 
@@ -122,30 +118,27 @@ public class HazardSpawner : MonoBehaviour
 
             t1 = 0;
         }
-        if (t2 >= 4)
+        if (t2 >= 15)
         {
-            source.clip = a2;
-            source.Play();
+          
             spawnedHazard2 = Instantiate(hazard2);
             UpdatedHazardCollision UCH2 = spawnedHazard2.GetComponent<UpdatedHazardCollision>();
             h2.Add(spawnedHazard2);
 
             t2 = 0;
         }
-        if (t3 >= 15)
+        if (t3 >= 30)
         {
-            source.clip = a3;
-            source.Play();
+           
             spawnedHazard3 = Instantiate(hazard3);
             UpdatedHazardCollision UCH3 = spawnedHazard3.GetComponent<UpdatedHazardCollision>();
             h3.Add(spawnedHazard3);
 
             t3 = 0;
         }
-        if (t4 >= 6)
+        if (t4 >= 8)
         {
-            source.clip = a4;
-            source.Play();
+            
             spawnedHazard4 = Instantiate(hazard4);
             UpdatedHazardCollision UCH4 = spawnedHazard4.GetComponent<UpdatedHazardCollision>();
             h4.Add(spawnedHazard4);
@@ -153,20 +146,18 @@ public class HazardSpawner : MonoBehaviour
             t4 = 0;
         }
 
-        if (t5 >= 7)
+        if (t5 >= 30)
         {
-            source.clip = a5;
-            source.Play();
+            
             spawnedHazard5 = Instantiate(hazard5);
             UpdatedHazardCollision UCH5 = spawnedHazard5.GetComponent<UpdatedHazardCollision>();
             h5.Add(spawnedHazard5);
 
             t5 = 0;
         }
-        if (t6 >= 3)
+        if (t6 >= 13)
         {
-            source.clip = a6;
-            source.Play();
+            
             spawnedHazard6 = Instantiate(hazard6);
             UpdatedHazardCollision UCH6 = spawnedHazard6.GetComponent<UpdatedHazardCollision>();
             h6.Add(spawnedHazard6);
@@ -174,10 +165,9 @@ public class HazardSpawner : MonoBehaviour
             t6 = 0;
         }
 
-        if (t7 >= 14)
+        if (t7 >= 18)
         {
-            source.clip = a7;
-            source.Play();
+            
             spawnedHazard7 = Instantiate(hazard7);
             UpdatedHazardCollision UCH7 = spawnedHazard7.GetComponent<UpdatedHazardCollision>();
             h7.Add(spawnedHazard7);
@@ -185,17 +175,16 @@ public class HazardSpawner : MonoBehaviour
             t7 = 0;
         }
 
-        if (t8 >= 20)
+        if (t8 >= 30)
         {
-            source.clip = a8;
-            source.Play();
+            
             spawnedHazard8 = Instantiate(hazard8);
             UpdatedHazardCollision UCH8 = spawnedHazard8.GetComponent<UpdatedHazardCollision>();
             h8.Add(spawnedHazard8);
 
             t8 = 0;
         }
-        if (t9 >= 30)
+        if (t9 >= 60)
         {
             spawnedHazard9 = Instantiate(hazard9);
             UpdatedHazardCollision UCH9 = spawnedHazard9.GetComponent<UpdatedHazardCollision>();

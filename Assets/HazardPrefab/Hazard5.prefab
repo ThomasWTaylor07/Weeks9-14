@@ -113,8 +113,8 @@ MonoBehaviour:
   onCollision:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7046205828944143072}
-        m_TargetAssemblyTypeName: UpdatedHazardCollision, Assembly-CSharp
+      - m_Target: {fileID: 8811803624763008883}
+        m_TargetAssemblyTypeName: HazardMovement4, Assembly-CSharp
         m_MethodName: playSound
         m_Mode: 1
         m_Arguments:
@@ -125,7 +125,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  asource: {fileID: 2963409520205449408}
 --- !u!114 &8811803624763008883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c46e917c6c7b54e85a8f677e6fb9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HazardMovement4
+  source: {fileID: 2963409520205449408}
+  spawn: {fileID: 8300000, guid: dcda56c714ded2d47a3fbd0643c8f5b6, type: 3}
+  collision: {fileID: 8300000, guid: 2d8d80fc7264afb47b192742f6de5fb8, type: 3}
   speed: 0.01
 --- !u!82 &2963409520205449408
 AudioSource:
@@ -151,7 +153,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 2d8d80fc7264afb47b192742f6de5fb8, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

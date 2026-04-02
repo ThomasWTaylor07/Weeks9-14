@@ -498,63 +498,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62e61d5b9632cde498fe80c20900f0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HazardSpawner
-  source: {fileID: 1000410174}
   hazard1: {fileID: 5533534257509393678, guid: acac33116fd7f5f488ce88a83e8d2aab, type: 3}
   spawnedHazard1: {fileID: 0}
   UHC1: {fileID: 572989762766527465, guid: acac33116fd7f5f488ce88a83e8d2aab, type: 3}
   h1: []
   t1: 0
   player1: {fileID: 1808516359}
-  a1: {fileID: 8300000, guid: d9b97f7a27a7a8142a69d404ed15bbb8, type: 3}
-  hazard2: {fileID: 1387094415138367264, guid: afa66630182bbaf44927532ffb892f7a, type: 3}
+  hazard2: {fileID: 2745266339202554644, guid: 42a7c0c5ca6a008468b1cec43fe317b0, type: 3}
   spawnedHazard2: {fileID: 0}
-  UHC2: {fileID: 4529677244173734311, guid: afa66630182bbaf44927532ffb892f7a, type: 3}
+  UHC2: {fileID: 5902040122361396549, guid: 42a7c0c5ca6a008468b1cec43fe317b0, type: 3}
   h2: []
   t2: 0
   player2: {fileID: 1808516359}
-  a2: {fileID: 8300000, guid: 9fe5397d39f9d714d860833e5e964161, type: 3}
   hazard3: {fileID: 8951509680161463669, guid: 6524e0bb9eba4ee42bc4aec8d62d18a6, type: 3}
   spawnedHazard3: {fileID: 0}
   UHC3: {fileID: 3895680660491006399, guid: 6524e0bb9eba4ee42bc4aec8d62d18a6, type: 3}
   h3: []
   t3: 0
   player3: {fileID: 1808516359}
-  a3: {fileID: 8300000, guid: 0dc12caa8c6d550479c82585453a2e9f, type: 3}
   hazard4: {fileID: 8412477147399132262, guid: 11043ed63d6b6ff4e98ab573f965fb30, type: 3}
   spawnedHazard4: {fileID: 0}
   UHC4: {fileID: 3766561348927366474, guid: 11043ed63d6b6ff4e98ab573f965fb30, type: 3}
   h4: []
   t4: 0
   player4: {fileID: 1808516359}
-  a4: {fileID: 8300000, guid: d45da895c8c83b2438073febe07e99e7, type: 3}
   hazard5: {fileID: 5212066356552260783, guid: 8932b8a3acf13e14eb353e64db9c4305, type: 3}
   spawnedHazard5: {fileID: 0}
   UHC5: {fileID: 7046205828944143072, guid: 8932b8a3acf13e14eb353e64db9c4305, type: 3}
   h5: []
   t5: 0
   player5: {fileID: 1808516359}
-  a5: {fileID: 8300000, guid: dcda56c714ded2d47a3fbd0643c8f5b6, type: 3}
   hazard6: {fileID: 4936001709891075698, guid: 3bfce10601d4a864d83d64022f0bfe36, type: 3}
   spawnedHazard6: {fileID: 0}
   UHC6: {fileID: 2242674426350851453, guid: 3bfce10601d4a864d83d64022f0bfe36, type: 3}
   h6: []
   t6: 0
   player6: {fileID: 1808516359}
-  a6: {fileID: 8300000, guid: e4b792d4669e60245b16ea1f8f15ef71, type: 3}
   hazard7: {fileID: 6249044723890508287, guid: 74373d9dd883a96479b03561832c5248, type: 3}
   spawnedHazard7: {fileID: 0}
   UHC7: {fileID: 1360697647700876217, guid: 74373d9dd883a96479b03561832c5248, type: 3}
   h7: []
   t7: 0
   player7: {fileID: 1808516359}
-  a7: {fileID: 8300000, guid: 4616adec8b6234f4a8d27b49dbbdeca4, type: 3}
   hazard8: {fileID: 7960908854407801621, guid: 557f3e7d045a7b84db8e8b0ca478899f, type: 3}
   spawnedHazard8: {fileID: 0}
   UHC8: {fileID: 2739098315317351330, guid: 557f3e7d045a7b84db8e8b0ca478899f, type: 3}
   h8: []
   t8: 0
   player8: {fileID: 1808516359}
-  a8: {fileID: 8300000, guid: d4f2c9f7a86e74b43a8c2add0777b71d, type: 3}
   hazard9: {fileID: 6942965470956619702, guid: 9930f64c5c9de354ea7e21f31c2087d5, type: 3}
   spawnedHazard9: {fileID: 0}
   UHC9: {fileID: 3664269195205324931, guid: 9930f64c5c9de354ea7e21f31c2087d5, type: 3}

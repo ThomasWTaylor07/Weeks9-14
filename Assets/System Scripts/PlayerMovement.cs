@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     public void collide()
     {
        
-        Debug.Log("AHHHHHHHHHHHHHHHHHHHHH");
+        
        
     }
     
