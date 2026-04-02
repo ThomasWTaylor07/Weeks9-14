@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Knight : MonoBehaviour
@@ -9,6 +10,7 @@ public class Knight : MonoBehaviour
     public AudioClip Clip3;
     public AudioClip Clip4;
     public float clipValue;
+    public CinemachineImpulseSource impulse;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -46,5 +48,10 @@ public class Knight : MonoBehaviour
             AudioSource.Play();
         }
         Debug.Log("Step!");
+    }
+
+    void shake()
+    {
+        impulse.GenerateImpulse();
     }
 }
