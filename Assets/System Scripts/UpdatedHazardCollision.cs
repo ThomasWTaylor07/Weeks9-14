@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class UpdatedHazardCollision : MonoBehaviour
     public float time;
     public bool destroy;
     public UnityEvent onCollision;
+    public GameManager gameManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -57,6 +59,12 @@ public class UpdatedHazardCollision : MonoBehaviour
 
 
         }
+
+       
+    }
+    public void setScore()
+    {
+        gameManager.score = 0;
     }
 
 }

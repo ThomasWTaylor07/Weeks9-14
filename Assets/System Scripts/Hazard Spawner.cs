@@ -13,6 +13,7 @@ public class HazardSpawner : MonoBehaviour
     public List<GameObject> h1;
     public float t1;
     public SpriteRenderer player1;
+    public GameManager gm;
     
     
 
@@ -21,7 +22,7 @@ public class HazardSpawner : MonoBehaviour
     public UpdatedHazardCollision UHC2;
     public List<GameObject> h2;
     public float t2;
-    public SpriteRenderer player2;
+  
     
     
 
@@ -31,7 +32,7 @@ public class HazardSpawner : MonoBehaviour
     public UpdatedHazardCollision UHC3;
     public List<GameObject> h3;
     public float t3;
-    public SpriteRenderer player3;
+ 
 
 
 
@@ -40,7 +41,7 @@ public class HazardSpawner : MonoBehaviour
     public UpdatedHazardCollision UHC4;
     public List<GameObject> h4;
     public float t4;
-    public SpriteRenderer player4;
+    
 
   
 
@@ -49,7 +50,7 @@ public class HazardSpawner : MonoBehaviour
     public UpdatedHazardCollision UHC5;
     public List<GameObject> h5;
     public float t5;
-    public SpriteRenderer player5;
+
 
     
 
@@ -58,7 +59,7 @@ public class HazardSpawner : MonoBehaviour
     public UpdatedHazardCollision UHC6;
     public List<GameObject> h6;
     public float t6;
-    public SpriteRenderer player6;
+   
  
    
 
@@ -67,7 +68,7 @@ public class HazardSpawner : MonoBehaviour
     public UpdatedHazardCollision UHC7;
     public List<GameObject> h7;
     public float t7;
-    public SpriteRenderer player7;
+   
 
   
 
@@ -76,7 +77,7 @@ public class HazardSpawner : MonoBehaviour
     public UpdatedHazardCollision UHC8;
     public List<GameObject> h8;
     public float t8;
-    public SpriteRenderer player8;
+
 
 
 
@@ -85,7 +86,7 @@ public class HazardSpawner : MonoBehaviour
     public UpdatedHazardCollision UHC9;
     public List<GameObject> h9;
     public float t9;
-    public SpriteRenderer player9;
+    
    
 
 
@@ -146,7 +147,7 @@ public class HazardSpawner : MonoBehaviour
             t4 = 0;
         }
 
-        if (t5 >= 30)
+        if (t5 >= 35)
         {
             
             spawnedHazard5 = Instantiate(hazard5);
@@ -175,7 +176,7 @@ public class HazardSpawner : MonoBehaviour
             t7 = 0;
         }
 
-        if (t8 >= 30)
+        if (t8 >= 45)
         {
             
             spawnedHazard8 = Instantiate(hazard8);
@@ -196,6 +197,7 @@ public class HazardSpawner : MonoBehaviour
         {
             UpdatedHazardCollision UHCi = h1[i].GetComponent<UpdatedHazardCollision>();
             UHCi.player = player1;
+            UHCi.gameManager = gm;
             if (UHCi.destroy == true)
             {
 
@@ -213,7 +215,8 @@ public class HazardSpawner : MonoBehaviour
         for (int ii = 0; ii < h2.Count; ii++)
         {
             UpdatedHazardCollision UCHii = h2[ii].GetComponent<UpdatedHazardCollision>();
-            UCHii.player = player2;
+            UCHii.player = player1;
+            UCHii.gameManager = gm;
             if (UCHii.destroy == true)
             {
                 GameObject hazard2 = h2[ii];
@@ -225,7 +228,8 @@ public class HazardSpawner : MonoBehaviour
         for (int iii = 0; iii < h3.Count; iii++)
         {
             UpdatedHazardCollision UCHiii = h3[iii].GetComponent<UpdatedHazardCollision>();
-            UCHiii.player = player3;
+            UCHiii.player = player1;
+            UCHiii.gameManager = gm;
             if (UCHiii.destroy == true)
             {
                 GameObject hazard3 = h3[iii];
@@ -236,7 +240,8 @@ public class HazardSpawner : MonoBehaviour
         for (int iv = 0; iv < h4.Count; iv++)
         {
             UpdatedHazardCollision UCHiv = h4[iv].GetComponent<UpdatedHazardCollision>();
-            UCHiv.player = player4;
+            UCHiv.player = player1;
+            UCHiv.gameManager = gm;
             if (UCHiv.destroy == true)
             {
                 GameObject hazard4 = h4[iv];
@@ -247,7 +252,8 @@ public class HazardSpawner : MonoBehaviour
         for (int v = 0; v < h5.Count; v++)
         {
             UpdatedHazardCollision UCHv = h5[v].GetComponent<UpdatedHazardCollision>();
-            UCHv.player = player5;
+            UCHv.player = player1;
+            UCHv.gameManager = gm;
             if (UCHv.destroy == true)
             {
                 GameObject hazard5 = h5[v];
@@ -258,7 +264,8 @@ public class HazardSpawner : MonoBehaviour
         for (int vi = 0; vi < h6.Count; vi++)
         {
             UpdatedHazardCollision UCHvi = h6[vi].GetComponent<UpdatedHazardCollision>();
-            UCHvi.player = player6;
+            UCHvi.player = player1;
+            UCHvi.gameManager = gm;
             if (UCHvi.destroy == true)
             {
                 GameObject hazard6 = h6[vi];
@@ -269,7 +276,8 @@ public class HazardSpawner : MonoBehaviour
         for (int vii = 0; vii < h7.Count; vii++)
         {
             UpdatedHazardCollision UCHvii = h7[vii].GetComponent<UpdatedHazardCollision>();
-            UCHvii.player = player7;
+            UCHvii.player = player1;
+            UCHvii.gameManager = gm;
             if (UCHvii.destroy == true)
             {
                 GameObject hazard7 = h7[vii];
@@ -280,7 +288,8 @@ public class HazardSpawner : MonoBehaviour
         for (int viii = 0; viii < h8.Count; viii++)
         {
             UpdatedHazardCollision UCHviii = h8[viii].GetComponent<UpdatedHazardCollision>();
-            UCHviii.player = player8;
+            UCHviii.player = player1;
+            UCHviii.gameManager = gm;
             if (UCHviii.destroy == true)
             {
                 GameObject hazard8 = h8[viii];
@@ -291,7 +300,8 @@ public class HazardSpawner : MonoBehaviour
         for (int ix = 0; ix < h9.Count; ix++)
         {
             UpdatedHazardCollision UCHix = h9[ix].GetComponent<UpdatedHazardCollision>();
-            UCHix.player = player9;
+            UCHix.player = player1;
+            UCHix.gameManager = gm; 
             if (UCHix.destroy == true)
             {
                 GameObject hazard9 = h9[ix];

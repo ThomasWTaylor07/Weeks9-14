@@ -125,6 +125,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3895680660491006399}
+        m_TargetAssemblyTypeName: UpdatedHazardCollision, Assembly-CSharp
+        m_MethodName: setScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gameManager: {fileID: 6155580872236559314, guid: 64f2b46a2f8c5094fafc36241c6098f3, type: 3}
 --- !u!114 &782451278663525497
 MonoBehaviour:
   m_ObjectHideFlags: 0
