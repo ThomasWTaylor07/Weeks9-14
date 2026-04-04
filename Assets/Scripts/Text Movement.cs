@@ -16,26 +16,23 @@ public class TextMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (manager.score == 0)
-        {
-            Move = StartCoroutine(StartMoving());
-
-        }
-
-        else if (manager.score >= 1)
-        {
-            {
-                if (Move != null)
-                {
-                    StopCoroutine(StartMoving());
-                }
+    void Update() { 
+   
+               
             }
-        }
 
+    public void movement()
+    {
+        Move = StartCoroutine(StartMoving());
+    }
 
-        IEnumerator StartMoving()
+    public void stopMove()
+    {
+        StopCoroutine(Move);
+    }
+    
+
+    IEnumerator StartMoving()
         {
             yield return StartCoroutine(MoveText());
 
@@ -60,7 +57,7 @@ public class TextMove : MonoBehaviour
             }
         }
     }
-}
+
 
 
    
