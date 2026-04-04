@@ -25,7 +25,7 @@ public class CoinSpawner : MonoBehaviour
     {
         t += Time.deltaTime;
 
-        if (t > 10)
+        if (t > 0.1)
         {
             spawnedCoins = Instantiate(coins, transform.position, Quaternion.identity);
             list.Add(spawnedCoins);
