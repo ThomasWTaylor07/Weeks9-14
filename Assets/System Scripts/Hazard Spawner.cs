@@ -185,7 +185,7 @@ public class HazardSpawner : MonoBehaviour
 
             t8 = 0;
         }
-        if (t9 >= 60)
+        if (t9 >= 1)
         {
             spawnedHazard9 = Instantiate(hazard9);
             UpdatedHazardCollision UCH9 = spawnedHazard9.GetComponent<UpdatedHazardCollision>();
