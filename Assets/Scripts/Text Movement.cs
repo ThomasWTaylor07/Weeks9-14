@@ -23,18 +23,21 @@ public class TextMove : MonoBehaviour
 
     public void movement()
     {
-        Move = StartCoroutine(StartMoving());
+        StartCoroutine(StartMoving());
     }
 
     public void stopMove()
     {
-        StopCoroutine(Move);
+        if (Move != null)
+        {
+            StopCoroutine(Move);
+        }
     }
     
 
     IEnumerator StartMoving()
         {
-            yield return StartCoroutine(MoveText());
+            yield return Move = StartCoroutine(MoveText());
 
 
         }

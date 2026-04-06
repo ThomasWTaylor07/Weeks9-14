@@ -109,7 +109,7 @@ public class HazardSpawner : MonoBehaviour
         t7 += Time.deltaTime;
         t8 += Time.deltaTime;
         t9 += Time.deltaTime;
-        if (t1 >= 5)
+        if (t1 >= 6)
         {
             spawnedHazard1 = Instantiate(hazard1);
             UpdatedHazardCollision UHC1 = spawnedHazard1.GetComponent<UpdatedHazardCollision>();
@@ -128,7 +128,7 @@ public class HazardSpawner : MonoBehaviour
 
             t2 = 0;
         }
-        if (t3 >= 30)
+        if (t3 >= 35)
         {
            
             spawnedHazard3 = Instantiate(hazard3);
@@ -147,7 +147,7 @@ public class HazardSpawner : MonoBehaviour
             t4 = 0;
         }
 
-        if (t5 >= 35)
+        if (t5 >= 30)
         {
             
             spawnedHazard5 = Instantiate(hazard5);
@@ -156,7 +156,7 @@ public class HazardSpawner : MonoBehaviour
 
             t5 = 0;
         }
-        if (t6 >= 13)
+        if (t6 >= 14)
         {
             
             spawnedHazard6 = Instantiate(hazard6);
@@ -185,7 +185,7 @@ public class HazardSpawner : MonoBehaviour
 
             t8 = 0;
         }
-        if (t9 >= 1)
+        if (t9 >= 60)
         {
             spawnedHazard9 = Instantiate(hazard9);
             UpdatedHazardCollision UCH9 = spawnedHazard9.GetComponent<UpdatedHazardCollision>();
