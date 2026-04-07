@@ -122,7 +122,6 @@ public class HazardSpawner : MonoBehaviour
         {
 //Hazards gets instantiated and turned into a new game object so it can get a script and be added to a list of game objects
             spawnedHazard1 = Instantiate(hazard1);
-            UpdatedHazardCollision UHC1 = spawnedHazard1.GetComponent<UpdatedHazardCollision>();
 //Each hazard has its own list of these new game object which gets added to everytime a new one is created so that it can be destroyed
             h1.Add(spawnedHazard1);
 
@@ -133,7 +132,6 @@ public class HazardSpawner : MonoBehaviour
         {
           
             spawnedHazard2 = Instantiate(hazard2);
-            UpdatedHazardCollision UCH2 = spawnedHazard2.GetComponent<UpdatedHazardCollision>();
             h2.Add(spawnedHazard2);
 
             t2 = 0;
@@ -142,7 +140,7 @@ public class HazardSpawner : MonoBehaviour
         {
            
             spawnedHazard3 = Instantiate(hazard3);
-            UpdatedHazardCollision UCH3 = spawnedHazard3.GetComponent<UpdatedHazardCollision>();
+            
             h3.Add(spawnedHazard3);
 
             t3 = 0;
@@ -151,7 +149,7 @@ public class HazardSpawner : MonoBehaviour
         {
             
             spawnedHazard4 = Instantiate(hazard4);
-            UpdatedHazardCollision UCH4 = spawnedHazard4.GetComponent<UpdatedHazardCollision>();
+            
             h4.Add(spawnedHazard4);
 
             t4 = 0;
@@ -161,7 +159,7 @@ public class HazardSpawner : MonoBehaviour
         {
             
             spawnedHazard5 = Instantiate(hazard5);
-            UpdatedHazardCollision UCH5 = spawnedHazard5.GetComponent<UpdatedHazardCollision>();
+            
             h5.Add(spawnedHazard5);
 
             t5 = 0;
@@ -170,7 +168,7 @@ public class HazardSpawner : MonoBehaviour
         {
             
             spawnedHazard6 = Instantiate(hazard6);
-            UpdatedHazardCollision UCH6 = spawnedHazard6.GetComponent<UpdatedHazardCollision>();
+            
             h6.Add(spawnedHazard6);
 
             t6 = 0;
@@ -180,7 +178,7 @@ public class HazardSpawner : MonoBehaviour
         {
             
             spawnedHazard7 = Instantiate(hazard7);
-            UpdatedHazardCollision UCH7 = spawnedHazard7.GetComponent<UpdatedHazardCollision>();
+            
             h7.Add(spawnedHazard7);
 
             t7 = 0;
@@ -190,7 +188,7 @@ public class HazardSpawner : MonoBehaviour
         {
             
             spawnedHazard8 = Instantiate(hazard8);
-            UpdatedHazardCollision UCH8 = spawnedHazard8.GetComponent<UpdatedHazardCollision>();
+            
             h8.Add(spawnedHazard8);
 
             t8 = 0;
@@ -198,7 +196,7 @@ public class HazardSpawner : MonoBehaviour
         if (t9 >= 60)
         {
             spawnedHazard9 = Instantiate(hazard9);
-            UpdatedHazardCollision UCH9 = spawnedHazard9.GetComponent<UpdatedHazardCollision>();
+            
             h9.Add(spawnedHazard9);
 
             t9 = 0;
