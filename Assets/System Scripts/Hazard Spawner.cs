@@ -203,18 +203,23 @@ public class HazardSpawner : MonoBehaviour
 
             t9 = 0;
         }
+//Each hazard list is accessed using a for loop that gets access to each of the hazards in the scene so they can be changed
         for (int i = 0; i < h1.Count; i++)
         {
+//Each hazard in the scene gets access to the collsion script again so variables can be reassigned and so it can access their destroy boolean
             UpdatedHazardCollision UHCi = h1[i].GetComponent<UpdatedHazardCollision>();
+//Each hazard reassigns the player prefab that's been assigned in their inspector to the player in the scene so that they get an accuarate player position
             UHCi.player = player1;
+//Each hazard reassigns the GameManager prefab from their inspector to the one in the scene so that setScore() can set the variable of the manager in the scene
             UHCi.gameManager = gm;
+//Each hazard has an if statement that checks if any hazards in the list has their destroy boolean equals true so that object gets destroyed
             if (UHCi.destroy == true)
             {
-
+//If a hazard's boolean is true, that specific object in the list gets turned into a game object so that it can be destroyed
                 GameObject hazard = h1[i];
-
+//The game object is than removed from the list so it doesn't try and get accessed by the script once destroyed
                 h1.Remove(hazard);
-
+//The object then gets destroyed, removing it from the scene so that there aren't too many hazards at one time
                 Destroy(hazard);
 
 
