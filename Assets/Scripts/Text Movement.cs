@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TextMove : MonoBehaviour
 {
-    //Creates a new coroutine that starts the coroutine that moves the text on screen which gets stopped and started by Unity Events
+    //Creates a new coroutine that starts the coroutine that moves the text on screen which gets stopped using Unity Events
     public Coroutine Move;
   
 
@@ -28,7 +28,7 @@ public class TextMove : MonoBehaviour
 
     public void stopMove()
     {
-        //This checks if Move, the coroutine that starts another coroutine, isn't null, which means it is curretly active so when the score in greater than 1, they know they can stop it
+        //This checks if the Move coroutine isn't null, meaning it is curretly active, so when the score in greater than 1, they know that the coroutine needs to be stopped
         if (Move != null)
         {
             //Stops the coroutie that starts the Move coroutine that allows the text to move in the UI
@@ -36,7 +36,7 @@ public class TextMove : MonoBehaviour
         }
     }
     
-
+    //This coroutine is what starts and stops the MoveText coroutine from happening through Unity Events
     IEnumerator StartMoving()
         {
         //This is what allows the Move coroutine to start the text movement coroutine 
@@ -58,7 +58,7 @@ public class TextMove : MonoBehaviour
                 t += Time.deltaTime;
             //Sets a Vector3 to the local scale of the object so that it can be changed based on the values given to it 
                 Vector3 newScale = transform.localScale;
-            //Assigns that variable the value of 1 * delta time so that it's value incraeses over the course of 1 second
+            //Assigns that variable the value of 1 * delta time so that it's value increases over the course of 1 second
                 newScale = Vector3.one * t;
             //Assigns the local scale back to the Vector3 so that it's assigned values can change the text's size
                 transform.localScale = newScale;
