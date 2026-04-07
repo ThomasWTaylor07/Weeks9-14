@@ -7,12 +7,19 @@ using UnityEngine.Events;
 
 public class HazardSpawner : MonoBehaviour
 {
+//Each hazard has there own game object that gets taken from the inspector to be instantiated
     public GameObject hazard1;
+//Each instantiated hazard gets put into a unique game object that then gets added to a list of that specific hazard
     public GameObject spawnedHazard1;
+//Each hazard gets its own Updated Hazard Collision script so it can be used to reassign things and figure out when to destroy an object
     public UpdatedHazardCollision UHC1;
+//Each hazard is added to its own list of that specific hazard so that objects can be removed and things can be assigned easily
     public List<GameObject> h1;
+//Each hazard has its own time variable that acts as a timer that will instantiate a prefab when its at the right time
     public float t1;
+//The sprite renderer for the player in the scene is used to reassign it for each prefab so instaed of looking at the sprite renderer for the player prefab, its looking at the position of the actual player object
     public SpriteRenderer player1;
+//The game manager is also used to reassign it from the prefab version to the one in the scene so that the score can be updated accuratley
     public GameManager gm;
     
     
@@ -100,6 +107,7 @@ public class HazardSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //The time for every diffrent hazard is increased by delta time to ensure consistent timing for all of them
         t1 += Time.deltaTime;
         t2 += Time.deltaTime;
         t3 += Time.deltaTime;
@@ -109,14 +117,16 @@ public class HazardSpawner : MonoBehaviour
         t7 += Time.deltaTime;
         t8 += Time.deltaTime;
         t9 += Time.deltaTime;
+ //Each prefab has its own maximum time until it gets instantiated, with an if statement used to determine if it has reached that time
         if (t1 >= 6)
         {
+//Hazards gets instantiated and turned into a new game object so it can get a script and be added to a list of game objects
             spawnedHazard1 = Instantiate(hazard1);
             UpdatedHazardCollision UHC1 = spawnedHazard1.GetComponent<UpdatedHazardCollision>();
-
+//Each hazard has its own list of these new game object which gets added to everytime a new one is created so that it can be destroyed
             h1.Add(spawnedHazard1);
 
-
+//When the max time is reached, the varible gets rest to 0 so that the timer can start again and a new prefab can be instantiated
             t1 = 0;
         }
         if (t2 >= 15)
