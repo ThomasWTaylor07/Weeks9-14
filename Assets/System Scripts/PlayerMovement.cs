@@ -33,9 +33,9 @@ public class PlayerMovement : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         {
-
-            //The player movement variable gets assigned the value from the input system as a Vector2 so that player inputs can change its value and move the object
-            playerMovement = context.ReadValue<Vector2>();
+                //The player movement variable gets assigned the value from the input system as a Vector2 so that player inputs can change its value and move the object
+                playerMovement = context.ReadValue<Vector2>();
+            
         }
     }
     
