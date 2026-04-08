@@ -23,16 +23,16 @@ public class GameManager : MonoBehaviour
     {
         //Assigns the text within the text mesh to show a string version of the score variable so that it can be displayed on screen
         UIText.text = score.ToString();
-        //Another if statement that checks if score is equal to 0 so it can invoke a Unity Event
+        //An if statement checks if score is equal to 0 so it can invoke a Unity Event
         if (score == 0)
         {
         //The on0 Unity Event is invoked so that everytime the score is 0, a coroutine in another script can start
             on0.Invoke();
         }
-        //Another if statement that checks if score is greater than 1 so it can invoke another Unity Event
+        //Another if statement checks if score is greater than 1 so it can invoke another Unity Event
         if (score > 0)
         {
-            //The on0 Unity Event is invoked so that everytime the score is 1, a coroutine in another script gets stopped
+            //The on1 Unity Event is invoked so that everytime the score is 1 or greater, a coroutine in another script gets stopped
             on1.Invoke();
         }
     }

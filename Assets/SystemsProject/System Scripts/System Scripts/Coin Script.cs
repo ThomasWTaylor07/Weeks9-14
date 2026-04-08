@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CoinScript : MonoBehaviour
 {
-    //Initializes a variable that gets access to the player objects sprite renderer so that it can recognize whever the players sprite renderer is within bounds of a coin
+    //Initializes a variable that gets access to the player objects sprite renderer so that it can recognize whenever the coins are within the bounds of the players sprite renderer
     public SpriteRenderer player;
     //Initializes a float that gets used to determine the objects x position
     public float xPos;
@@ -32,7 +32,7 @@ public class CoinScript : MonoBehaviour
         //Creates an if statement so that whenever a coin is within the players sprite renderer, something happens so it can be collected
         if (player.bounds.Contains(transform.position))
         {
-        //Sets boolean to true to show that a coin has been collected which is used by the coin spawner script to see when a coin should be destroyed
+        //A boolean is set to true to show that a coin has been collected which is used by the coin spawner script to see when a coin should be destroyed
             collected = true;
         }
     }

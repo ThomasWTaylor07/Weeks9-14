@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 929311e85f8dbee499e8dcded0b39453
+guid: 90cea4e6d3360e54fa7d20e47c1cfb0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3884041032151014820
-    second: systemBackground_0
+      213: 4056058344551517612
+    second: Bone_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: systemBackground_0
+      name: Bone_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1138
-        height: 708
+        x: 234
+        y: 5
+        width: 25
+        height: 431
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c52e891824d191ac0800000000000000
-      internalID: -3884041032151014820
+      spriteID: cad804f03930a4830800000000000000
+      internalID: 4056058344551517612
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      systemBackground_0: -3884041032151014820
+      Bone_0: 4056058344551517612
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

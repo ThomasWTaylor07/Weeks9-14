@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 4ad5a10e5edbe964cbd32f7ced899513
+guid: 41c251c407cbe634fb708b3c417092a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6088342627132289551
-    second: MonedaD_0
+      213: -2678498615165238795
+    second: Blade_0
   - first:
-      213: -2359506160307568889
-    second: MonedaD_1
+      213: 8973553475351863548
+    second: Blade_1
   - first:
-      213: 4966363116081101388
-    second: MonedaD_2
+      213: 2968531407573341186
+    second: Blade_2
   - first:
-      213: -672162727369665448
-    second: MonedaD_3
+      213: 7628969496186625764
+    second: Blade_3
   - first:
-      213: 2361706786320140148
-    second: MonedaD_4
+      213: -5149512742951977276
+    second: Blade_4
+  - first:
+      213: 1683611451575150653
+    second: Blade_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,17 +111,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MonedaD_0
+      name: Blade_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 7
+        y: 79
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f02b619ac532e7450800000000000000
-      internalID: 6088342627132289551
+      spriteID: 5f143b763bf04dad0800000000000000
+      internalID: -2678498615165238795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_1
+      name: Blade_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 0
-        width: 12
-        height: 16
+        x: 21
+        y: 45
+        width: 21
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70f758df5a9514fd0800000000000000
-      internalID: -2359506160307568889
+      spriteID: cf0e1578757788c70800000000000000
+      internalID: 8973553475351863548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_2
+      name: Blade_2
       rect:
         serializedVersion: 2
-        x: 36
-        y: 0
-        width: 8
-        height: 16
+        x: 70
+        y: 44
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4abd9fe0f01ce440800000000000000
-      internalID: 4966363116081101388
+      spriteID: 204dff45697523920800000000000000
+      internalID: 2968531407573341186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_3
+      name: Blade_3
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 12
-        height: 16
+        x: 120
+        y: 45
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8549fdb8f8ffba6f0800000000000000
-      internalID: -672162727369665448
+      spriteID: 4ee9e76365b8fd960800000000000000
+      internalID: 7628969496186625764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MonedaD_4
+      name: Blade_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 15
-        height: 16
+        x: 169
+        y: 45
+        width: 20
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +244,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 477cd3e2fc776c020800000000000000
-      internalID: 2361706786320140148
+      spriteID: 4cefffd81714988b0800000000000000
+      internalID: -5149512742951977276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blade_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 45
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38aaeee1b36d5710800000000000000
+      internalID: 1683611451575150653
       vertices: []
       indices: 
       edges: []
@@ -235,11 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MonedaD_0: 6088342627132289551
-      MonedaD_1: -2359506160307568889
-      MonedaD_2: 4966363116081101388
-      MonedaD_3: -672162727369665448
-      MonedaD_4: 2361706786320140148
+      Blade_0: -2678498615165238795
+      Blade_1: 8973553475351863548
+      Blade_2: 2968531407573341186
+      Blade_3: 7628969496186625764
+      Blade_4: -5149512742951977276
+      Blade_5: 1683611451575150653
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

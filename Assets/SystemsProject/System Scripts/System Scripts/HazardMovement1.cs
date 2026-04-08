@@ -4,7 +4,7 @@ public class HazardMovement1 : MonoBehaviour
 {
     //Initializes a float varible that will move the object by being added to the objects transform
     public float speed;
-    //Initializes a float that becomes the Y position that the object spawns at when it gets instantiated
+    //Initializes a float that becomes the x position that the object spawns at when it gets instantiated
     public float xPos;
     //Gets access to an audio source that plays sound when the object is instantiated or a Unity Event is invoked
     public AudioSource source;
@@ -15,7 +15,7 @@ public class HazardMovement1 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Sets the value of the float to a random position along the X axis so that it can be positioned there when instantiated
+        //Sets the value of the float to a random position along the x axis so that it can be positioned there when instantiated
         xPos = Random.Range(-8, 8);
         //Puts the spawn clip into the audio source so that it can be played when instaniated
         source.clip = spawn;
@@ -30,9 +30,9 @@ public class HazardMovement1 : MonoBehaviour
         speed = 2 * Time.deltaTime;
       //Assigns and initializes a new Vector2 to the objects transform so that it can get values and update the transform with them
         Vector2 newPos = transform.position;
-      //Subtracts the Y value of newPos by speed so that the object can move down screen
+      //Subtracts the y value of newPos by speed so that the object can move down screen
         newPos.y -= speed;
-      //Sets the X value of newPos to xPos so that it gets put at that point on the X axis
+      //Sets the x value of newPos to the value of xPos so that it gets put at a random point on the X axis
         newPos.x = xPos;
   //Reassigns the transform to newPos so that the object uses its values to go to at a random x position and moves down the screen
         transform.position = newPos;

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 87fde00ac7982ea44ad86388685c64b0
+guid: 929311e85f8dbee499e8dcded0b39453
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3277034427761116659
-    second: image (77)_0
+      213: -3884041032151014820
+    second: systemBackground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image (77)_0
+      name: systemBackground_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 9
-        width: 57
-        height: 46
+        x: 0
+        y: 0
+        width: 1138
+        height: 708
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0ab298ec82a582d0800000000000000
-      internalID: -3277034427761116659
+      spriteID: c52e891824d191ac0800000000000000
+      internalID: -3884041032151014820
       vertices: []
       indices: 
       edges: []
@@ -135,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image (77)_0: -3277034427761116659
+      systemBackground_0: -3884041032151014820
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

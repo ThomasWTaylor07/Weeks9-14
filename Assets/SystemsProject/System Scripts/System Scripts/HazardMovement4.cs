@@ -25,7 +25,7 @@ public class HazardMovement4 : MonoBehaviour
     {
         //Multiplies the value of the speed varibale by delta time so that the object can move at a consistent rate
         speed = 4 * Time.deltaTime;
- //Takes the objets transform and inrements it by it's up transform and speed variable so that it can move forward with a rotation
+ //Takes the objets transform and inrements it by it's up transform and speed variable so that it can move forward in the direction the object is rotated in
         transform.position += transform.up * speed; 
     }
     //This function happens whenever the onCollision Unity Event is invoked so that there is an indication of a collision happening

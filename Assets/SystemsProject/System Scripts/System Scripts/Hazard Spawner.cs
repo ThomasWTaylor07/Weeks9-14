@@ -7,11 +7,11 @@ using UnityEngine.Events;
 
 public class HazardSpawner : MonoBehaviour
 {
-//Each hazard has there own game object that gets taken from the inspector to be instantiated
+//Each hazard has their own game object that gets taken from the inspector to be instantiated
     public GameObject hazard1;
 //Each instantiated hazard gets put into a unique game object that then gets added to a list of that specific hazard
     public GameObject spawnedHazard1;
-//Each hazard gets its own Updated Hazard Collision script so it can be used to reassign things and figure out when to destroy an object
+//Each hazard gets its own Updated Hazard Collision script so it can be used to reassign things and determine when to destroy an object
     public UpdatedHazardCollision UHC1;
 //Each hazard is added to its own list of that specific hazard so that objects can be removed and things can be assigned easily
     public List<GameObject> h1;
@@ -19,7 +19,7 @@ public class HazardSpawner : MonoBehaviour
     public float t1;
 //The sprite renderer for the player in the scene is used to reassign it for each prefab so instaed of looking at the sprite renderer for the player prefab, its looking at the position of the actual player object
     public SpriteRenderer player1;
-//The game manager is also used to reassign it from the prefab version to the one in the scene so that the score can be updated accuratley
+//The game manager script is also brough into the script to reassign it from the prefab version to the one in the scene so that the score can be updated accuratley
     public GameManager gm;
     
     
@@ -120,12 +120,12 @@ public class HazardSpawner : MonoBehaviour
  //Each prefab has its own maximum time until it gets instantiated, with an if statement used to determine if it has reached that time
         if (t1 >= 6)
         {
-//Hazards gets instantiated and turned into a new game object so it can get a script and be added to a list of game objects
+//Each hazards gets instantiated and turns into a game object that gets added to their own list of game objects
             spawnedHazard1 = Instantiate(hazard1);
-//Each hazard has its own list of these new game object which gets added to everytime a new one is created so that it can be destroyed
+//Each hazard has its own list of these game object which gets added to everytime a new one is created so that it can be destroyed and be given its collision script
             h1.Add(spawnedHazard1);
 
-//When the max time is reached, the varible gets rest to 0 so that the timer can start again and a new prefab can be instantiated
+//When the max time is reached, the varible gets reset to 0 so that the timer can start again and a new prefab can be instantiated
             t1 = 0;
         }
         if (t2 >= 15)
@@ -201,16 +201,16 @@ public class HazardSpawner : MonoBehaviour
 
             t9 = 0;
         }
-//Each hazard list is accessed using a for loop that gets access to each of the hazards in the scene so they can be changed
-        for (int i = 0; i < h1.Count; i++)
+//Each hazard list is accessed using a for loop that gets access to each of the hazards in the scene so they can be altered
+        for (int i = h1.Count - 1; i >= 0; i--)
         {
 //Each hazard in the scene gets access to the collsion script again so variables can be reassigned and so it can access their destroy boolean
             UpdatedHazardCollision UHCi = h1[i].GetComponent<UpdatedHazardCollision>();
 //Each hazard reassigns the player prefab that's been assigned in their inspector to the player in the scene so that they get an accuarate player position
             UHCi.player = player1;
-//Each hazard reassigns the GameManager prefab from their inspector to the one in the scene so that setScore() can set the variable of the manager in the scene
+//Each hazard reassigns the GameManager prefab script from their inspector to the one in the scene so that setScore() can set the variable of the manager in the scene
             UHCi.gameManager = gm;
-//Each hazard has an if statement that checks if any hazards in the list has their destroy boolean equals true so that object gets destroyed
+//Each hazard has an if statement that checks if any hazards in the list has their destroy boolean equal to true so that the object gets destroyed
             if (UHCi.destroy == true)
             {
 //If a hazard's boolean is true, that specific object in the list gets turned into a game object so that it can be destroyed
@@ -225,7 +225,7 @@ public class HazardSpawner : MonoBehaviour
 
             }
         }
-        for (int ii = 0; ii < h2.Count; ii++)
+        for (int ii = h2.Count - 1; ii >= 0; ii--)
         {
             UpdatedHazardCollision UCHii = h2[ii].GetComponent<UpdatedHazardCollision>();
             UCHii.player = player1;
@@ -238,7 +238,7 @@ public class HazardSpawner : MonoBehaviour
             }
 
         }
-        for (int iii = 0; iii < h3.Count; iii++)
+        for (int iii = h3.Count - 1; iii >= 0; iii--)
         {
             UpdatedHazardCollision UCHiii = h3[iii].GetComponent<UpdatedHazardCollision>();
             UCHiii.player = player1;
@@ -250,7 +250,7 @@ public class HazardSpawner : MonoBehaviour
                 Destroy(hazard3);
             }
         }
-        for (int iv = 0; iv < h4.Count; iv++)
+        for (int iv = h4.Count - 1; iv >= 0; iv--)
         {
             UpdatedHazardCollision UCHiv = h4[iv].GetComponent<UpdatedHazardCollision>();
             UCHiv.player = player1;
@@ -262,7 +262,7 @@ public class HazardSpawner : MonoBehaviour
                 Destroy(hazard4);
             }
         }
-        for (int v = 0; v < h5.Count; v++)
+        for (int v = h5.Count - 1; v >= 0; v--)
         {
             UpdatedHazardCollision UCHv = h5[v].GetComponent<UpdatedHazardCollision>();
             UCHv.player = player1;
@@ -274,7 +274,7 @@ public class HazardSpawner : MonoBehaviour
                 Destroy(hazard5);
             }
         }
-        for (int vi = 0; vi < h6.Count; vi++)
+        for (int vi = h6.Count - 1; vi >= 0; vi--)
         {
             UpdatedHazardCollision UCHvi = h6[vi].GetComponent<UpdatedHazardCollision>();
             UCHvi.player = player1;
@@ -286,7 +286,7 @@ public class HazardSpawner : MonoBehaviour
                 Destroy(hazard6);
             }
         }
-        for (int vii = 0; vii < h7.Count; vii++)
+        for (int vii = h7.Count - 1; vii >= 0;vii--)
         {
             UpdatedHazardCollision UCHvii = h7[vii].GetComponent<UpdatedHazardCollision>();
             UCHvii.player = player1;
@@ -298,7 +298,7 @@ public class HazardSpawner : MonoBehaviour
                 Destroy(hazard7);
             }
         }
-        for (int viii = 0; viii < h8.Count; viii++)
+        for (int viii = h8.Count - 1; viii >= 0; viii--)
         {
             UpdatedHazardCollision UCHviii = h8[viii].GetComponent<UpdatedHazardCollision>();
             UCHviii.player = player1;
@@ -310,7 +310,7 @@ public class HazardSpawner : MonoBehaviour
                 Destroy(hazard8);
             }
         }
-        for (int ix = 0; ix < h9.Count; ix++)
+        for (int ix = h9.Count - 1; ix >= 0; ix--)
         {
             UpdatedHazardCollision UCHix = h9[ix].GetComponent<UpdatedHazardCollision>();
             UCHix.player = player1;

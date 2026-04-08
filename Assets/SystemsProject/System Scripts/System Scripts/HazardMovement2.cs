@@ -5,7 +5,7 @@ public class HazardMovement2 : MonoBehaviour
 {
     //Initializes a float variable that moves the object by getting added to the objects transform
     public float speed;
-    //Initializes a float that acts as the Y position that the object spawns at when instantiated
+    //Initializes a float that acts as the y position that the object spawns at when instantiated
     public float yPos;
     //Gets access to an audio source so the hazard can play a sound when instantiated and when its collided with the player
     public AudioSource source;
@@ -17,7 +17,7 @@ public class HazardMovement2 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Sets the value of the float to a random position along the Y axis so that it can be positioned there when instantiate
+        //Sets the value of the float to a random position along the y axis so that it can be positioned there when instantiated
         yPos = Random.Range(-5, 5);
         //Gives the audio source access to the spawn sound so it can play when instantiated
         source.clip = spawn;
